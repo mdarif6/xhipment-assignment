@@ -1,0 +1,27 @@
+header {
+  background-color: var(--post-primary-color);
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--post-white-color);
+}
+
+.post-header {
+  display: flex;
+}
+.post-header div:last-child {
+  margin-left: auto;
+}
+.post-login-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-header {
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1rem;
+  }
+}

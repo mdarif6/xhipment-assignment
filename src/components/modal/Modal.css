@@ -1,0 +1,7 @@
+.modal-close-btn {
+  border: none;
+  background-color: var(--post-white-color);
+  font-size: 1.5rem;
+  float: right;
+  padding: 0.5rem 0.5rem 0 0;
+}

@@ -54,13 +54,6 @@
   color: var(--post-white-color);
 }
 
-.post-icon-button {
-  color: var(--post-icons-color);
-  font-size: 1.5rem;
-  border: none;
-  background-color: var(--post-secondary-color);
-}
-
 .post-title-description textarea {
   background-color: var(--post-secondary-color);
 }
@@ -70,6 +63,33 @@
   padding: 0.5rem 0;
 }
 
+.post-delete-confirmation {
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  align-items: center;
+  gap: 1rem;
+}
+.post-delete-confirmation-button-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.post-btn-primary {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: var(--post-primary-color);
+  color: var(--post-white-color);
+  border: none;
+}
+.post-btn-secondary {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: var(--post-primary-color);
+  color: var(--post-white-color);
+  border: none;
+}
 @media only screen and (max-width: 600px) {
   .post-card {
     flex-direction: column;

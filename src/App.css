@@ -6,10 +6,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-i,
-button {
-  cursor: pointer;
-}
 
 :root {
   --post-background-color: #bef264;
@@ -19,4 +15,34 @@ button {
   --post-heading-color: #365314;
   --post-buttons-color: #65a30d;
   --post-white-color: white;
+}
+
+i,
+button {
+  cursor: pointer;
+}
+
+.post-btn-primary {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: var(--post-primary-color);
+  color: var(--post-white-color);
+  border: none;
+}
+.post-btn-primary:hover {
+  background-color: var(--post-secondary-color);
+  color: var(--post-primary-color);
+}
+.post-btn-secondary {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: var(--post-secondary-color);
+  color: var(--post-white-color);
+  border: none;
+}
+.post-icon-button {
+  color: var(--post-icons-color);
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--post-secondary-color);
 }

@@ -1,7 +1,7 @@
 import "./CreatePost.css";
 import React, { useState } from "react";
 import Modal from "../modal/Modal";
-import { useAuth } from "../../pages/common/auth-context";
+import { useAuth } from "../../context/auth-context";
 
 export default function CreatePost({ createPost }) {
   const [body, setBody] = useState("");
@@ -25,10 +25,7 @@ export default function CreatePost({ createPost }) {
 
       <div className="post-create-heading-and-button">
         {state.userDetails.googleId ? (
-          <button
-            className="post-create-button"
-            onClick={() => setIsOpen(true)}
-          >
+          <button className="post-btn-primary" onClick={() => setIsOpen(true)}>
             Create New Post
           </button>
         ) : null}
@@ -36,6 +33,7 @@ export default function CreatePost({ createPost }) {
 
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="post-form">
+          <h3 className="post-create-heading">Create Your Post</h3>
           <form action="" onSubmit={submitHandle}>
             <div>
               <textarea

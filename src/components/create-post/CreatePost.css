@@ -16,27 +16,14 @@
   font-weight: bold;
 }
 
-.post-create-button {
-  padding: 1rem;
-  font-weight: bold;
-  background-color: var(--post-primary-color);
-  color: var(--post-white-color);
-  border: none;
-}
-
-.post-create-button:hover {
-  background-color: var(--post-secondary-color);
-  color: var(--post-primary-color);
-}
-
 .post-form {
-  padding: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   width: 300px;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 form textarea {
@@ -48,11 +35,6 @@ form textarea {
 }
 
 .post-btn-primary {
-  padding: 0.8rem;
-  cursor: pointer;
-  border: none;
-  background-color: var(--post-buttons-color);
-  color: var(--post-white-color);
   float: right;
 }
 .disabled-btn {

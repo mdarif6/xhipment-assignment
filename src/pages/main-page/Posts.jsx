@@ -87,7 +87,7 @@ export default function Posts() {
       <Header />
       <CreatePost createPost={createPost} />
       <div className="posts-wrapper">
-        <h2 className="posts-heading">Recent Post</h2>
+        <h2 className="posts-heading">Recent Posts</h2>
         <div className="posts-cards">
           {sortedPosts &&
             sortedPosts.map((item) => {

@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <div>
       <header className="post-header">
-        <div>Xhipment blog</div>
+        <div className="post-header-heading">Xhipment blog</div>
 
         <div className="post-login-buttons">
           {state.userDetails.googleId ? <Logout /> : <Login />}

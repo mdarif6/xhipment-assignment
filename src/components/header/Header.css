@@ -6,8 +6,8 @@ header {
   color: var(--post-white-color);
 }
 
-.post-header {
-  display: flex;
+.post-header-heading {
+  padding-bottom: 1rem;
 }
 .post-header div:last-child {
   margin-left: auto;

@@ -7,7 +7,7 @@ export default function CreatePost({ createPost }) {
   const [body, setBody] = useState("");
   const [title, setTitle] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  const { state, dispatch } = useAuth();
+  const { state } = useAuth();
 
   function submitHandle(e) {
     e.preventDefault();

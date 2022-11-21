@@ -9,7 +9,7 @@ export default function PostsCard({ item, deletePost, editPost }) {
   const [isOpen, setIsOpen] = useState(false);
   const [editTitle, setEditTitle] = useState(item.title);
   const [editBody, setEditBody] = useState(item.body);
-  const { state, dispatch } = useAuth();
+  const { state } = useAuth();
 
   const avatarText =
     item.title.charAt(0).toUpperCase() + item.body.charAt(0).toUpperCase();

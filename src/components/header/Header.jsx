@@ -7,7 +7,7 @@ import "./Header.css";
 import { useAuth } from "../../context/auth-context";
 
 export default function Header() {
-  const { state, dispatch } = useAuth();
+  const { state } = useAuth();
 
   useEffect(() => {
     function start() {

@@ -6,6 +6,9 @@ header {
   color: var(--post-white-color);
 }
 
+.post-header {
+  display: flex;
+}
 .post-header-heading {
   padding-bottom: 1rem;
 }
@@ -20,8 +23,6 @@ header {
 @media only screen and (max-width: 600px) {
   .post-header {
     flex-direction: column;
-
-    align-items: center;
     gap: 1rem;
   }
 }
